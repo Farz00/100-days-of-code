@@ -14,13 +14,13 @@ psswrd = [] #save random password generated in a list
 #Eazy Level - Order not randomised:
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 for letter in range(0,nr_letters):
-    psswrd += random.choice(letters)
+    psswrd.append(random.choice(letters))
 
 for symbol in range(0,nr_symbols):
-    psswrd += random.choice(symbols)
+    psswrd.append(random.choice(symbols))
 
 for number in range(0,nr_numbers):
-    psswrd += random.choice(numbers)
+    psswrd.append(random.choice(numbers))
 
 random.shuffle(psswrd) #shuffle the list
 
